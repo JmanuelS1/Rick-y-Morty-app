@@ -100,13 +100,13 @@ function App () {
   const indexOfFirstResident = indexOfLastResident - residentsPerPage
   const currentResidents = location?.residents.slice(indexOfFirstResident, indexOfLastResident)
 
-// Cambiar de página
-const paginate = pageNumber => {
-  // Validar si el número de página está dentro del rango de páginas
-  if (pageNumber >= 1 && pageNumber <= totalPages) {
-    setCurrentPage(pageNumber);
+  // Cambiar de página
+  const paginate = pageNumber => {
+    // Validar si el número de página está dentro del rango de páginas
+    if (pageNumber >= 1 && pageNumber <= totalPages) {
+      setCurrentPage(pageNumber)
+    }
   }
-};
 
 
   // Calcular el total de páginas
@@ -118,7 +118,7 @@ const paginate = pageNumber => {
         <h2>Loading...</h2>
       ) : (
         <div className='app'>
-          <img src='../public/assets/frame259.png' alt='Navbar' className='navbar__img'/>
+          <img src='../assets/frame259.png' alt='Navbar' className='navbar__img' />
           <form className='app__form' onSubmit={handleSubmit}>
             <input className='app__input' type="text" ref={textInput} />
             <button className='app__btn'>Search location</button>
