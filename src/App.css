@@ -1,0 +1,113 @@
+ @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Teko:wght@300..700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=PT+Sans+Narrow:wght@400;700&family=Teko:wght@300..700&display=swap');
+
+ /* CODIO DEL PROFE */
+
+
+ /* ------ RESET  ---*/
+
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
+ img {
+   display: inline-block;
+   max-width: 100%;
+   max-height: 100%;
+   object-fit: contain;
+ }
+
+ input,
+ button {
+   display: inline-block;
+   cursor: pointer;
+   font-family: inherit;
+   height: 20px;
+   text-align: center;
+ }
+
+ button {
+   border: none;
+   padding: 0 15px;
+ }
+
+ ul {
+   list-style: none;
+ }
+
+ a {
+   text-decoration: none;
+   color: dodgerblue
+ }
+
+ body {
+  font-family: 'Teko';
+   background-color: #05292e;
+   color: #fff;
+   margin: 0;
+   padding-bottom: 20px;
+ }
+
+ .app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  
+ }
+
+ .app__container{
+display: flex;
+flex-wrap: wrap;
+padding: 20px;
+gap: 20px;
+justify-content: space-evenly;
+ }
+
+ .app__form{
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+ }
+
+ .app__input{
+  border-radius: 5px 0 0 5px;
+ }
+
+ .app__btn {
+  background-color: #71ab21;
+  color: white;
+  border-radius: 0 5px 5px 0;
+ }
+
+ .app__btn:hover{
+  filter: brightness(1.1);
+ }
+
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #71ab21;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 7px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: .7s;
+}
+
+.pagination button:hover {
+  filter: brightness(1.1);
+}
+.pagination span{
+  margin: 15px
+}

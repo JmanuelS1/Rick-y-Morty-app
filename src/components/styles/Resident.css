@@ -1,0 +1,60 @@
+.resident{
+  background-color: #072226;
+  width: 250px;
+  border-radius: 20px;
+  overflow: hidden; /*este me redondea la img al igual q la card*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resident__img{
+  position: relative;
+}
+
+.resident__status{
+  background-color: #072226;
+  position: absolute;
+  top: 10%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.resident__circle{
+  background-color: gray;
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.Alive{
+  background-color: #039e04;
+}
+
+.Dead{
+  background-color: red;
+}
+
+.resident__line{
+  border: 1px solid #7777;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.resident__list{
+  padding-bottom: 20px;
+  width: 80%;
+}
+
+.resident__item{
+  display: flex;
+  flex-direction: column;
+}
+
+.resident__item span:first-child {
+padding-left: 20px;
+color: gray;
+}
